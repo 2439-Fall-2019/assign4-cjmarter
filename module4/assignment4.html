@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Cole Marter | INFO 2439 | Assignment 4</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial scale=1">
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<link rel="stylesheet" href="ctheme1/themes/assignment4.min.css" />
+<link rel="stylesheet" href="ctheme1/themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+<link rel="stylesheet" href="_css/assignment4.css
+  </head>
+<body>
+<!-- Cole Marter
+     assignment4.htm
+     INFO2439
+     Thoendel
+     10/5/19
+-->
+<div data-role="page" id="page1" data-add-back-btn="true" data-title="Cole Marter | INFO 2439 | Assignment #4">
+  <div data-role="header" data-position="fixed">
+  <p>
+      <a href="" data-rel="back">Go back</a>
+      </p>
+      <h1>Bistro Customer Survey</h1>
+    </div>
+	<form action="http://emthoendel.faculty.mccinfo.net/2439/bistrosurvey_insert.php" method="post">
+	<fieldset data-role="controlgroup">
+ <legend>How Would You Rate Your Meal Today?</legend>
+<label for="meal_rate">Meal Rate</label>
+<select name="meal_rate" id="meal_rate">
+<option value="Poor">Poor</option>
+<option value="Needs Work">Needs Work</option>
+<option value="Fair">Fair</option>
+<option value="Good">Good</option>
+<option value="Excellent">Excellent</option>
+</select>
+<fieldset data-role="controlgroup">
+ <legend>How Would You Rate Your Service Today?</legend>
+<label for="service_rate">Service Rate</label>
+<select name="service_rate" id="service_rate">
+<option value="Poor">Poor</option>
+<option value="Needs Work">Needs Work</option>
+<option value="Fair">Fair</option>
+<option value="Good">Good</option>
+<option value="Excellent">Excellent</option>
+</select>
+<fieldset data-role="controlgroup">
+ <legend>How Would You Rate Your Overall Experience Today?</legend>
+<label for="overall_exp">Overall Experience</label>
+<select name="overall_exp" id="overall_exp">
+<option value="Poor">Poor</option>
+<option value="Needs Work">Needs Work</option>
+<option value="Fair">Fair</option>
+<option value="Good">Good</option>
+<option value="Excellent">Excellent</option>
+</select>
+<fieldset data-role="controlgroup" data-type="horizontal">
+<legend>Would You Recommend This Restaurant To A Friend?</legend>
+<input type="checkbox" name="recommend_rest" id="yes" value="Yes">
+<label for="yes">Yes</label>
+<input type="checkbox" name="recommend_rest" id="no" value="No">
+<label for="no">No</label>
+</fieldset>
+<div class="ui-field-contain">
+<label for="name">Name:</label>
+<input type="text" name="bname" id="bname" value="" />
+</div>
+<div class="ui-field-contain">
+<label for="email">Email:</label>
+<input type="text" name="email" id="email" value="" />
+</div>
+<div class="ui-field-contain">
+<input type="submit" name="submit" value="Send" />
+</div>
+</form>
+ <div data-role="footer" data-position="fixed">
+  <h4>Created By: <a href="mailto:cjmarter.mail.mccneb.edu">Cole Marter</a><br></h4>
+  </div>
+  </div>
+</body>
+</html>
